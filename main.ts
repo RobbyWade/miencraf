@@ -302,6 +302,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.rule(Predicate.MovingDown)
     )
 })
+let mySprite2: Sprite = null
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
     ........................
@@ -328,6 +329,24 @@ mySprite = sprites.create(img`
     ........................
     ........................
     ........................
+    `, SpriteKind.Player)
+let mySprite3 = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 scene.setBackgroundImage(img`
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
@@ -452,8 +471,8 @@ scene.setBackgroundImage(img`
     ee88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
     `)
 controller.player1.moveSprite(mySprite, 100, 100)
-controller.player2.moveSprite(mySprite, 100, 100)
-controller.player3.moveSprite(mySprite, 100, 100)
+controller.player2.moveSprite(mySprite2, 100, 100)
+controller.player3.moveSprite(mySprite3, 100, 100)
 controller.player4.moveSprite(mySprite, 100, 100)
 mySprite.setStayInScreen(true)
 mySprite.setBounceOnWall(true)
