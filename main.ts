@@ -455,6 +455,8 @@ controller.player1.moveSprite(mySprite, 100, 100)
 controller.player2.moveSprite(mySprite, 100, 100)
 controller.player3.moveSprite(mySprite, 100, 100)
 controller.player4.moveSprite(mySprite, 100, 100)
+mySprite.setStayInScreen(true)
+mySprite.setBounceOnWall(true)
 characterAnimations.loopFrames(
 mySprite,
 assets.animation`myAnim`,
