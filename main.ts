@@ -74,6 +74,65 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.rule(Predicate.MovingUp)
     )
 })
+controller.player2.onButtonEvent(ControllerButton.Down, ControllerButtonEvent.Pressed, function () {
+    characterAnimations.loopFrames(
+    mySprite2,
+    [img`
+        . . . . f f f f . . . . 
+        . . f f e e e e f f . . 
+        . f f e e e e e e f f . 
+        f f f f 4 e e e f f f f 
+        f f f 4 4 4 e e f f f f 
+        f f f 4 4 4 4 e e f f f 
+        f 4 e 4 4 4 4 4 4 e 4 f 
+        f 4 4 f f 4 4 f f 4 4 f 
+        f e 4 d d d d d d 4 e f 
+        . f e d d b b d d e f . 
+        . f f e 4 4 4 4 e f f . 
+        e 4 f b 1 1 1 1 b f 4 e 
+        4 d f 1 1 1 1 1 1 f d 4 
+        4 4 f 6 6 6 6 6 6 f 4 4 
+        . . . f f f f f f . . . 
+        . . . f f . . f f . . . 
+        `,img`
+        . . . . . . . . . . . . 
+        . . . f f f f f f . . . 
+        . f f f e e e e f f f . 
+        f f f e e e e e e f f f 
+        f f f f 4 e e e f f f f 
+        f f f 4 4 4 e e f f f f 
+        f f f 4 4 4 4 e e f f f 
+        f 4 e 4 4 4 4 4 4 e 4 f 
+        f 4 4 f f 4 4 f f 4 4 f 
+        f e 4 d d d d d d 4 e f 
+        . f e d d b b d 4 e f e 
+        f f f e 4 4 4 4 d d 4 e 
+        e 4 f b 1 1 1 e d d e . 
+        . . f 6 6 6 6 f e e . . 
+        . . f f f f f f f . . . 
+        . . f f f . . . . . . . 
+        `,img`
+        . . . . . . . . . . . . 
+        . . . f f f f f f . . . 
+        . f f f e e e e f f f . 
+        f f f e e e e e e f f f 
+        f f f f 4 e e e f f f f 
+        f f f 4 4 4 e e f f f f 
+        f f f 4 4 4 4 e e f f f 
+        f 4 e 4 4 4 4 4 4 e 4 f 
+        f 4 4 f f 4 4 f f 4 4 f 
+        f e 4 d d d d d d 4 e f 
+        e f e 4 d b b d d e f . 
+        e 4 d d 4 4 4 4 e f f f 
+        . e d d e 1 1 1 b f 4 e 
+        . . e e f 6 6 6 6 f . . 
+        . . . f f f f f f f . . 
+        . . . . . . . f f f . . 
+        `],
+    200,
+    characterAnimations.rule(Predicate.MovingDown)
+    )
+})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     mySprite,
@@ -150,6 +209,65 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.rule(Predicate.MovingLeft)
     )
 })
+controller.player2.onButtonEvent(ControllerButton.Up, ControllerButtonEvent.Pressed, function () {
+    characterAnimations.loopFrames(
+    mySprite2,
+    [img`
+        . . . . f f f f . . . . 
+        . . f f e e e e f f . . 
+        . f e e e e e e e f f . 
+        f f e f e e e e e e f f 
+        f f f e e e e e e e e f 
+        f f f e e e e e e f e f 
+        f f f f e e e e f f f f 
+        f f f f f f f f f f f f 
+        f f f f f f f f f f f f 
+        . f f f f f f f f f f . 
+        . e f f f f f f f f e . 
+        e 4 f b b b b b b f 4 e 
+        4 d f d d d d d d c d 4 
+        4 4 f 6 6 6 6 6 6 f 4 4 
+        . . . f f f f f f . . . 
+        . . . f f . . f f . . . 
+        `,img`
+        . . . . . . . . . . . . 
+        . . . . f f f f . . . . 
+        . . f f e e e e f f . . 
+        . f e e e e e e e f f . 
+        f e e f e e e e e e f f 
+        f f f e e e e e e e e f 
+        f f e e e e e e e f e f 
+        f f f e e e e f f f f f 
+        f f f f f f f f f f f f 
+        f f f f f f f f f f f f 
+        . f f f f f f f f f f . 
+        . e f f f f f f f f e . 
+        . 4 f b b b b b f e 4 e 
+        . 4 f d d d d d e d d 4 
+        . e f f f f f f e e 4 . 
+        . . f f f . . . . . . . 
+        `,img`
+        . . . . . . . . . . . . 
+        . . . . f f f f . . . . 
+        . . f f e e e e f f . . 
+        . f e e e e e e e f f . 
+        f f e f e e e e e e f f 
+        f f f e e e e e e e e f 
+        f f f f e e e e e f e f 
+        f f f f f e e e e f f f 
+        f f f f f f f f f f f f 
+        f f f f f f f f f f f f 
+        . f f f f f f f f f f . 
+        . e f f f f f f f f e . 
+        e 4 e f b b b b b f 4 . 
+        4 d d e d d d d d f 4 . 
+        . 4 e e f f f f f f e . 
+        . . . . . . . f f f . . 
+        `],
+    200,
+    characterAnimations.rule(Predicate.MovingUp)
+    )
+})
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     mySprite,
@@ -221,6 +339,65 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . f e e f 4 4 5 5 f f . . 
         . . . . f f f f f f f f f f . . 
         . . . . . f f . . . f f f . . . 
+        `],
+    200,
+    characterAnimations.rule(Predicate.MovingRight)
+    )
+})
+controller.player2.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Pressed, function () {
+    characterAnimations.loopFrames(
+    mySprite2,
+    [img`
+        . . . . . . . . . . . . 
+        . . . f f f f f f . . . 
+        . f f f e e e e e f . . 
+        f f f e e e e e e e f . 
+        f f f f e e e e e e e f 
+        f f f f f e e e 4 e e f 
+        f f f f e e e 4 4 e e f 
+        f f f f 4 4 4 4 4 e f f 
+        f f 4 e 4 f f 4 4 e f . 
+        f f 4 d 4 d d d d f . . 
+        . f f f 4 d d b b f . . 
+        . 4 d d e 4 4 4 e f . . 
+        . e d d e 1 1 1 1 f . . 
+        . f e e f 6 6 6 6 f f . 
+        . f f f f f f f f f f . 
+        . . f f . . . f f f . . 
+        `,img`
+        . . . . . . . . . . . . 
+        . . . f f f f f f . . . 
+        . f f f e e e e e f . . 
+        f f f e e e e e e e f . 
+        f f f f e e e e e e e f 
+        f f f f f e e e 4 e e f 
+        f f f f e e e 4 4 e e f 
+        f f f f 4 4 4 4 4 e f f 
+        f f 4 e 4 f f 4 4 e f . 
+        . f 4 d 4 d d d d f . . 
+        . f f f e e d b b f . . 
+        . . f 4 d d e 4 e f . . 
+        . . f e d d e 1 1 f . . 
+        . f f f e e f 6 6 f f . 
+        . f f f f f f f f f f . 
+        . . f f . . . f f f . . 
+        `,img`
+        . . . . f f f f f . . . 
+        . . f f e e e e e f . . 
+        . f f e e e e e e e f . 
+        f f f f e e e e e e e f 
+        f f f f f e e e 4 e e f 
+        f f f f e e e 4 4 e e f 
+        f f f f 4 4 4 4 4 e f f 
+        f f 4 e 4 f f 4 4 e f f 
+        . f 4 d 4 d d d d f f . 
+        . f f f 4 d d b b f . . 
+        . . f e e 4 4 4 e f . . 
+        . . 4 d d e 1 1 1 f . . 
+        . . e d d e 1 1 1 f . . 
+        . . f e e f 6 6 6 f . . 
+        . . . f f f f f f . . . 
+        . . . . f f f . . . . . 
         `],
     200,
     characterAnimations.rule(Predicate.MovingRight)
@@ -302,10 +479,67 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.rule(Predicate.MovingDown)
     )
 })
+controller.player2.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pressed, function () {
+    characterAnimations.loopFrames(
+    mySprite2,
+    [img`
+        . . . f f f f f . . . . 
+        . . f e e e e e f f . . 
+        . f e e e e e e e f f . 
+        f e e e e e e e f f f f 
+        f e e 4 e e e f f f f f 
+        f e e 4 4 e e e f f f f 
+        f f e 4 4 4 4 4 f f f f 
+        f f e 4 4 f f 4 e 4 f f 
+        . f f d d d d 4 d 4 f . 
+        . . f b b d d 4 f f f . 
+        . . f e 4 4 4 e e f . . 
+        . . f 1 1 1 e d d 4 . . 
+        . . f 1 1 1 e d d e . . 
+        . . f 6 6 6 f e e f . . 
+        . . . f f f f f f . . . 
+        . . . . . f f f . . . . 
+        `,img`
+        . . . . . . . . . . . . 
+        . . . f f f f f f . . . 
+        . . f e e e e e f f f . 
+        . f e e e e e e e f f f 
+        f e e e e e e e f f f f 
+        f e e 4 e e e f f f f f 
+        f e e 4 4 e e e f f f f 
+        f f e 4 4 4 4 4 f f f f 
+        . f e 4 4 f f 4 e 4 f f 
+        . . f d d d d 4 d 4 f . 
+        . . f b b d e e f f f . 
+        . . f e 4 e d d 4 f . . 
+        . . f 1 1 e d d e f . . 
+        . f f 6 6 f e e f f f . 
+        . f f f f f f f f f f . 
+        . . f f f . . . f f . . 
+        `,img`
+        . . . . . . . . . . . . 
+        . . . f f f f f f . . . 
+        . . f e e e e e f f f . 
+        . f e e e e e e e f f f 
+        f e e e e e e e f f f f 
+        f e e 4 e e e f f f f f 
+        f e e 4 4 e e e f f f f 
+        f f e 4 4 4 4 4 f f f f 
+        . f e 4 4 f f 4 e 4 f f 
+        . . f d d d d 4 d 4 f f 
+        . . f b b d d 4 f f f . 
+        . . f e 4 4 4 e d d 4 . 
+        . . f 1 1 1 1 e d d e . 
+        . f f 6 6 6 6 f e e f . 
+        . f f f f f f f f f f . 
+        . . f f f . . . f f . . 
+        `],
+    200,
+    characterAnimations.rule(Predicate.MovingLeft)
+    )
+})
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
-info.player1.setLife(1000)
-info.player2.setLife(1000)
 mySprite = sprites.create(img`
     ........................
     .....ffff.......3.......
@@ -331,6 +565,24 @@ mySprite = sprites.create(img`
     ........................
     ........................
     ........................
+    `, SpriteKind.Player)
+mySprite2 = sprites.create(img`
+    . . . . f f f f . . . . 
+    . . f f e e e e f f . . 
+    . f f e e e e e e f f . 
+    f f f f 4 e e e f f f f 
+    f f f 4 4 4 e e f f f f 
+    f f f 4 4 4 4 e e f f f 
+    f 4 e 4 4 4 4 4 4 e 4 f 
+    f 4 4 f f 4 4 f f 4 4 f 
+    f e 4 d d d d d d 4 e f 
+    . f e d d b b d d e f . 
+    . f f e 4 4 4 4 e f f . 
+    e 4 f b 1 1 1 1 b f 4 e 
+    4 d f 1 1 1 1 1 1 f d 4 
+    4 4 f 6 6 6 6 6 6 f 4 4 
+    . . . f f f f f f . . . 
+    . . . f f . . f f . . . 
     `, SpriteKind.Player)
 scene.setBackgroundImage(img`
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
@@ -458,8 +710,50 @@ controller.player1.moveSprite(mySprite, 100, 100)
 controller.player2.moveSprite(mySprite2, 100, 100)
 mySprite.setStayInScreen(true)
 mySprite.setBounceOnWall(true)
+mySprite2.setStayInScreen(true)
+mySprite2.setBounceOnWall(true)
 characterAnimations.loopFrames(
 mySprite,
+[img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . f f f f . . . . . . 
+    . . . . f f f 2 2 f f f . . . . 
+    . . . f f f 2 2 2 2 f f f . . . 
+    . . f f f e e e e e e f f f . . 
+    . . f f e 2 2 2 2 2 2 e e f . . 
+    . . f e 2 f f f f f f 2 e f . . 
+    . . f f f f e e e e f f f f . . 
+    . f f e f b f 4 4 f b f e f f . 
+    . f e e 4 1 f d d f 1 4 e e f . 
+    . . f e e d d d d d d e e f . . 
+    . . . f e e 4 4 4 4 e e f . . . 
+    . . e 4 f 2 2 2 2 2 2 f 4 e . . 
+    . . 4 d f 2 2 2 2 2 2 f d 4 . . 
+    . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+    . . . . . f f f f f f . . . . . 
+    `,img`
+    . . . . . . f f f f . . . . . . 
+    . . . . f f f 2 2 f f f . . . . 
+    . . . f f f 2 2 2 2 f f f . . . 
+    . . f f f e e e e e e f f f . . 
+    . . f f e 2 2 2 2 2 2 e e f . . 
+    . . f e 2 f f f f f f 2 e f . . 
+    . . f f f f e e e e f f f f . . 
+    . f f e f b f 4 4 f b f e f f . 
+    . f e e 4 1 f d d f 1 4 e e f . 
+    . . f e e d d d d d d e e f . . 
+    . . . f e e 4 4 4 4 e e f . . . 
+    . . e 4 f 2 2 2 2 2 2 f 4 e . . 
+    . . 4 d f 2 2 2 2 2 2 f d 4 . . 
+    . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+    . . . . . f f f f f f . . . . . 
+    . . . . . f f . . f f . . . . . 
+    `],
+200,
+characterAnimations.rule(Predicate.NotMoving)
+)
+characterAnimations.loopFrames(
+mySprite2,
 assets.animation`myAnim`,
 200,
 characterAnimations.rule(Predicate.NotMoving)
