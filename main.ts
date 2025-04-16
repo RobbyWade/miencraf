@@ -305,6 +305,8 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
+info.player1.setLife(1000)
+info.player2.setLife(1000)
 mySprite = sprites.create(img`
     ........................
     .....ffff.......3.......
