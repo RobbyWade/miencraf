@@ -535,7 +535,7 @@ controller.player2.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pr
         . . f f f . . . f f . . 
         `],
     200,
-    characterAnimations.rule(Predicate.FacingLeft)
+    characterAnimations.rule(Predicate.MovingLeft)
     )
 })
 let mySprite2: Sprite = null
